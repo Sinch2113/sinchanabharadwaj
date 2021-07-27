@@ -1,0 +1,643 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+body {
+  background-image: url("night.png");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+#title {
+  padding-bottom: 405px;
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat";
+}
+
+.logo {
+  width: 3rem;
+  margin: 20px;
+}
+
+.nav {
+  padding: 0px;
+}
+
+.colorscheme {
+  font-family: 'Staatliches', cursive;
+  font-size: 100px;
+  font-weight: 500;
+  margin-top: 50px;
+    display: inline-block;
+    text-transform: uppercase;
+    text-align: center;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin: 0;
+  position: relative;
+  color: #000;
+}
+.colorscheme:before{
+  content: attr(data-text);
+  position: absolute;
+  background: linear-gradient(271deg, #03256C 10%, #F6C6EA 50%, #BC6FF1 70%, #fff 84%);
+  -webkit-background-clip: text;
+  color: transparent;
+  background-size: 100% 90%;
+  line-height: 0.9;
+  clip-path: ellipse(120px 120px at -2.54% -9.25%);
+  animation: swing 5s infinite;
+  animation-direction: alternate;
+}
+
+@keyframes swing{
+  0%{
+     -webkit-clip-path: ellipse(120px 120px at -2.54% -9.25%);
+    clip-path: ellipse(120px 120px at -2.54% -9.25%);
+  }
+  50%{
+    -webkit-clip-path: ellipse(120px 120px at 49.66% 64.36%);
+    clip-path: ellipse(120px 120px at 49.66% 64.36%);
+
+  }
+  100%{
+     -webkit-clip-path: ellipse(120px 120px at 102.62% -1.61%);
+    clip-path: ellipse(120px 120px at 102.62% -1.61%);
+  }
+}
+
+
+.colorscheme1 {
+  padding-top: 40px;
+  font-family: 'Staatliches', cursive;
+  background: linear-gradient(271deg, #03256C 31%, #A239EA 20%, #fff 85%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 50px;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.5rem;
+  font-family: "Montserrat";
+  color: #fff;
+  font-weight: 500;
+}
+
+#about {
+  color: #fff;
+  padding-bottom: 100px;
+  background-image: url("bw1.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.profile-layout
+{
+  margin-left: 50%;
+}
+
+.about-me {
+  text-align: left;
+}
+
+.about-heading {
+  text-align: left;
+  padding: 7% 0 6%;
+  font-family: 'Staatliches', cursive;
+  font-size: 72px;
+  color: #fff;
+}
+
+.about-text {
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-weight: 500px;
+padding-right: 10%;
+  text-align: justify;
+ text-justify: inter-word;
+
+}
+
+#myskills {
+text-align: center;
+  position: relative;
+}
+.skills {
+  padding-right: 0px;
+      padding-left: 0px;
+}
+.area{
+    /*background: linear-gradient(271deg, #9B72AA 20%, #001E6C 85%);*/
+    background-image: url("purple2.jpg");
+      background-attachment: fixed;
+      background-size: 100%;
+      background-repeat: repeat;
+    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
+    width: 100%;
+    height:850px;
+position: relative;
+}
+
+.circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+
+}
+
+.circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}
+
+
+.opaque
+{
+  padding: 10px 20px;
+  margin: 10px 200px 20px 200px;
+  background: rgba(229, 216, 235,0.3);
+}
+.skills-heading {
+  text-align: center;
+  padding: 3% 0 1%;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 80px;
+  background: #fff;
+  font-weight: bolder;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.skill-photo {
+  width: 150px;
+}
+.skill-photo1 {
+  width: 200px;
+  padding-left: 50px;
+}
+
+.skillscar {
+  width: 30%;
+  float: left;
+}
+
+.skillscar1 {
+  width: 30%;
+  float: right;
+}
+.skill-p {
+  font-family: "Montserrat";
+
+  font-weight: 300;
+  color: white;
+  font-size: 18px;
+  line-height: 2;
+  text-align: justify;
+ text-justify: inter-word;
+}
+.skill-row {
+  width: 70%;
+  margin: 3% auto 1% auto;
+  padding-bottom: 4%;
+  text-align: left;
+  line-height: 2;
+  font-weight: bold;
+}
+
+.skill-row1 {
+  width: 70%;
+  padding-top: 3%;
+  margin: 10px auto 5% auto;
+  text-align: left;
+  line-height: 2;
+  font-weight: bold;
+}
+
+
+
+.carousel-sizes {
+  padding-bottom: 20px;
+}
+
+.dnd {
+  font-weight: bold;
+  color: #F7DBF0;
+  padding-bottom: 20px;
+  font-size: 50px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+#freelance {
+  background-color: #000;
+  padding-bottom: 100px;
+    position: relative;
+}
+
+.freelance-heading {
+  font-family: 'Staatliches', cursive;
+  padding: 5% 0 3%;
+  background: linear-gradient(271deg, #a0e9ff 30%, #a162e8 50%, #f093b0 70%, #edca85 94%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 120%;
+  position: relative;
+  z-index: 100;
+  text-align: center;
+  font-size: 64px;
+}
+#footer
+{
+  text-align: center;
+  color: #fff;
+}
+.freelance-text {
+  color: #fff;
+  font-family: "Montserrat";
+  font-size: 20px;
+  line-height: 1.5;
+  position: relative;
+  z-index: 100;
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.touch-img {
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+}
+.feature-box {
+  text-align: center;
+  padding: 3%;
+}
+
+@media only screen and (min-device-width: 280px) and (max-device-width: 480px) and (orientation: portrait) {
+  .skill-photo {
+    width: 70px;
+  }
+
+  body {
+    background-image: url("night3.png");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .freelance-heading {
+    font-family: 'Staatliches', cursive;
+    padding: 5% 0 3%;
+    background: linear-gradient(271deg, #a0e9ff 30%, #a162e8 50%, #f093b0 70%, #edca85 94%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 120%;
+    position: relative;
+    z-index: 100;
+    text-align: center;
+    font-size: 40px;
+  }
+  .about-heading {
+    text-align: center;
+    padding: 7% 0 4%;
+    font-family: 'Staatliches', cursive;
+    font-size: 64px;
+    color: #fff;
+  }
+
+  .profile-layout
+  {
+    margin-left: 5%;
+  }
+  .about-text {
+    font-family: "Montserrat";
+    font-size: 20px;
+    font-weight: 500px;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+  .dnd {
+    font-weight: bold;
+    color: #511281;
+    padding-bottom: 20px;
+    font-size: 28px;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  .skill-p {
+  color: black;
+    font-size: 15px;
+    line-height: 2;
+    text-align: justify;
+   font-family: 'Josefin Sans', sans-serif;
+
+  }
+  .skill-photo1 {
+    width: 80px;
+    padding-left: 10px;
+  }
+  .skills-heading {
+    text-align: center;
+    padding: 10% 0 1%;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 50px;
+    background: #fff;
+    font-weight: bolder;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .opaque
+  {
+    padding: 10px 20px;
+    margin: 10px 20px 20px 20px;
+    background: rgba(229, 216, 235,0.9);
+    position: absolute;
+  }
+  .area{
+      /*background: linear-gradient(271deg, #9B72AA 20%, #001E6C 85%);*/
+      background-image: url("purple2.jpg");
+        background-attachment: fixed;
+        background-size: 100%;
+        background-repeat: repeat;
+        background-position: center;
+      background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
+      width: 100%;
+
+      height:650px;
+      position: relative;
+  }
+  .skill-row {
+    width: 90%;
+    margin: 3% auto 1% auto;
+    padding-bottom: 4%;
+    text-align: center;
+    line-height: 2;
+    font-weight: bold;
+  }
+
+  .skill-row1 {
+    width: 90%;
+    padding-top: 3%;
+    margin: 10px auto 5% auto;
+    text-align: center;
+    line-height: 2;
+    font-weight: bold;
+  }
+  .colorscheme {
+    font-family: 'Staatliches', cursive;
+    font-size: 80px;
+    font-weight: 500;
+     padding-top: 70px;
+      display: inline-block;
+      text-transform: uppercase;
+      text-align: center;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    margin: 0;
+    position: relative;
+    color: #000;
+  }
+  .colorscheme:before{
+    content: attr(data-text);
+    position: absolute;
+    background: linear-gradient(271deg, #5C33F6 20%, #C490E4 30%, #BC6FF1 60%, #fff 74%);
+    -webkit-background-clip: text;
+    color: transparent;
+    background-size: 100% 90%;
+    line-height: 0.9;
+    clip-path: ellipse(120px 120px at -2.54% -9.25%);
+    animation: swing 5s infinite;
+    animation-direction: alternate;
+  }
+
+  .colorscheme1 {
+    padding-top: 40px;
+    font-family: 'Staatliches', cursive;
+    background: linear-gradient(250deg, #fff 20%, #511281 40%, #21094E 60%, #000 85%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 30px;
+  }
+  #about {
+    color: #fff;
+    padding-bottom: 100px;
+    background-image: url("bw2.png");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .skill-photo1 {
+    width: 70px;
+    padding-left: 20px;
+  }
+  #title {
+    padding-bottom: 405px;
+    text-align: center;
+  }
+
+  #myskills {
+  text-align: center;
+    position: relative;
+  }
+}
+@media only screen and (min-device-width: 500px) and (max-device-width: 1200px)
+{
+  #about {
+    color: #fff;
+    padding-bottom: 100px;
+    background-image: url("bw2.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+  }
+  .opaque
+  {
+    padding: 10px 20px;
+    margin: 10px 20px 20px 20px;
+    background: rgba(229, 216, 235,0.3);
+    position: absolute;
+  }
+
+    .skill-photo1 {
+      width: 120px;
+      padding-left: 20px;
+    }
+    .skill-photo {
+      width: 120px;
+    }
+}
+
+
+
+
+
+
+
+
+@media only screen and (min-device-width: 1920px)
+{
+  .colorscheme {
+    font-family: 'Staatliches', cursive;
+    font-size: 100px;
+    font-weight: 500;
+     padding-top: 70px;
+      display: inline-block;
+      text-transform: uppercase;
+      text-align: center;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    margin: 0;
+    position: relative;
+    color: #000;
+  }
+  .colorscheme:before{
+    content: attr(data-text);
+    position: absolute;
+    background: linear-gradient(271deg, #5C33F6 20%, #C490E4 30%, #BC6FF1 60%, #fff 74%);
+    -webkit-background-clip: text;
+    color: transparent;
+    background-size: 100% 90%;
+    line-height: 0.9;
+    clip-path: ellipse(120px 120px at -2.54% -9.25%);
+    animation: swing 5s infinite;
+    animation-direction: alternate;
+  }
+
+  .colorscheme1 {
+    padding-top: 100px;
+    font-family: 'Staatliches', cursive;
+    background: linear-gradient(250deg, #fff 20%, #511281 40%, #21094E 60%, #000 85%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 30px;
+  }
+}
